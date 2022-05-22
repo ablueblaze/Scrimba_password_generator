@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --prime-color: #00b4ba;
+    --accent-color-one: #625f66;
+}
+
+body {
+    height: 100vh;
+    background-color: #1f2125;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+main {
+    max-width: 600px;
+    border: 1px solid var(--prime-color);
+}
+
+header {
+    min-height: 250px;
+    padding: 20px 20px;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--prime-color);
+    padding: 30px 0;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.new-password {
+    padding: 5px 20px;
+    background-color: var(--accent-color-one);
+    /* border: 5px solid var(--accent-color-two); */
+    border-radius: 5px;
+}
+
+.prime-color {
+    color: var(--prime-color);
+}
+
+input {
+    width: 100px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: var(--prime-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
