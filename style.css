@@ -8,42 +8,47 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #1f2125;
     color: white;
     text-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 main {
     max-width: 600px;
+    margin-top: 30px;
+    padding: 50px;
     border: 1px solid var(--prime-color);
 }
 
 header {
     min-height: 250px;
-    padding: 20px 20px;
 }
 
 article {
     display: flex;
     justify-content: space-around;
-    background-color: var(--prime-color);
     padding: 30px 0;
     min-height: 200px;
     max-height: 300px;
+    border-top: 3px solid var(--accent-color-one);
 }
 
 section {
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.new-password {
+.passwords {
     padding: 5px 20px;
     background-color: var(--accent-color-one);
-    /* border: 5px solid var(--accent-color-two); */
     border-radius: 5px;
 }
 
@@ -73,4 +78,6 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
+    font-size: 25px;
+    padding: 10px 20px;
 }

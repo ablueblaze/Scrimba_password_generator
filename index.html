@@ -11,15 +11,18 @@
     <body>
         <main>
             <header>
-                <h1 >Generate a</h1>
-                <h1 class="prime-color">random password</h1>
-                <h3 s>Never use an insecure password again.</h3>
+                <h1 >Generate a
+                    <!-- Had some trouble styling this line to be colored. -->
+                <br> 
+                <span class="prime-color">Random Password</span></h1>
+                <p>Never use an insecure password again.</p>
                 <button id="generate-btn" >
                     <img
                         src="assets/Icon.png"
                         alt="mini lightning blot sysmbol"
                     />Generate passwords
                 </button>
+                <br>
                 <label class="prime-color" for="length">Password length:</label>
                 <input
                     type="number"
@@ -33,13 +36,14 @@
                 />
             </header>
             <article>
+                <!-- Tried to figure out the copy to clipboard solution -->
                 <section>
-                    <h4 class="new-password"></h5>
-                    <h4 class="new-password"></h5>
+                    <h4 data-new-password class="passwords"></h5>
+                    <h4 data-new-password class="passwords"></h5>
                 </section>
                 <section>
-                    <h4 class="new-password"></h5>
-                    <h4 class="new-password"></h5>
+                    <h4 data-new-password class="passwords"></h5>
+                    <h4 data-new-password class="passwords"></h5>
                 </section>
             </article>
         </main>

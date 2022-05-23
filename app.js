@@ -84,8 +84,8 @@ const password = (() => {
 })();
 
 const appendPasswords = (length) => {
-    const passwordPar = document.querySelectorAll('.new-password');
-    for (let i of passwordPar) {
+    const passwordEls = document.querySelectorAll('[data-new-password]');
+    for (let i of passwordEls) {
         i.textContent = password.create(length);
     }
 };
@@ -94,6 +94,8 @@ appendPasswords(12);
 
 const generateBtn = document.getElementById('generate-btn');
 
+// I tried to get the input number to reflect what was given.
+// But I wasn't able to find a work around.
 generateBtn.addEventListener('click', () => {
     const lengthEl = document.getElementById('length-el');
     const length = lengthEl.value;
