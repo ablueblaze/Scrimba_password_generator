@@ -100,13 +100,13 @@ generateBtn.addEventListener('click', () => {
     const lengthEl = document.getElementById('length-el');
     const length = lengthEl.value;
     if (length > 20) {
-        lengthEl.textContent = 20;
+        lengthEl.value = 20;
         appendPasswords(20);
         alert('Max password length is 20 characters');
         return;
     }
     if (length < 8) {
-        lengthEl.textContent = 8;
+        lengthEl.value = 8;
         appendPasswords(8);
         alert('Minimum password length is 8 characters');
         return;
